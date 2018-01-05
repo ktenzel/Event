@@ -2,29 +2,21 @@ package models;
 
 public class Event {
     public Integer numberGuest;
-    public Integer pricePerGuest;
+    public String foodChoice;
+    public String drinkChoice;
+    public String entertainmentChoice;
     public Integer initialGuestCost;
-    public Integer foodChicken;
-    public Integer foodVegetarian;
-    public Integer drinkSoda;
-    public Integer drinkSpirits;
-
-    public Event(int guest, int price, int chicken, int vegetarian, int soda, int spirits){
+    public Event(int guest, String food, String drink, String entertainment){
         numberGuest = guest;
-        pricePerGuest = price;
-        foodChicken = chicken;
-        foodVegetarian = vegetarian;
-        drinkSoda = soda;
-        drinkSpirits = spirits;
+        foodChoice = food;
+        drinkChoice = drink;
+        entertainmentChoice = entertainment;
     }
     public int getGuestCount() {
         return numberGuest;
     }
-    public int getPricePerGuest() {
-        return pricePerGuest;
-    }
-    public int getGuestTotalCost(){
-        initialGuestCost = numberGuest * pricePerGuest;
+    public Integer getPricePerGuest(Integer initialGuestCost){
+        initialGuestCost = numberGuest * 30;
         return initialGuestCost;
     }
 }
