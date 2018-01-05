@@ -4,11 +4,12 @@ public class Event {
     public Integer numberGuest;
     public Integer pricePerGuest;
 
-    public Event(int numberGuest, int pricePerGuest);
-        this.numberGuest = numberGuest;
-        this.pricePerGuest = pricePerGuest;
+    public Event(int guest, int price){
+        numberGuest = guest;
+        pricePerGuest = price;
+    }
 
-    public Integer getNumberGuest() {
+    public int getGuestCount() {
         return numberGuest;
     }
 }
