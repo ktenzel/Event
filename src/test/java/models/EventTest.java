@@ -19,7 +19,7 @@ public class EventTest {
         assertEquals(30, testEvent.getPricePerGuest());
     }
     @Test
-    public void runEvent_getPartyGuestCost() {
+    public void getGuestTotalCost_getPartyGuestCost() {
         Event testEvent = new Event(20, 30);
         assertEquals(600, testEvent.getGuestTotalCost());
     }

@@ -17,7 +17,7 @@ public class Event {
     public int getPricePerGuest() {
         return pricePerGuest;
     }
-    public Integer getGuestTotalCost(Integer numberGuest, Integer pricePerGuest,Integer initialGuestCost){
+    public int getGuestTotalCost(){
         initialGuestCost = numberGuest * pricePerGuest;
         return initialGuestCost;
     }
