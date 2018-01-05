@@ -13,4 +13,14 @@ public class EventTest {
         Event testEvent = new Event(20, 30);
         assertEquals(20, testEvent.getGuestCount());
     }
+    @Test
+    public void runEvent_getPricePerGuest() {
+        Event testEvent = new Event(20, 30);
+        assertEquals(30, testEvent.getPricePerGuest());
+    }
+    @Test
+    public void runEvent_getPartyGuestCost() {
+        Event testEvent = new Event(20, 30);
+        assertEquals(600, testEvent.getGuestTotalCost());
+    }
 }
