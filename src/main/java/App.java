@@ -6,15 +6,18 @@ import java.io.InputStreamReader;
 
 public class App {
     public static void main(String[] args) {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Scrabble word?");
-        try {
-            String stringScrabbleWord = bufferedReader.readLine();
-            String letterValueResult = Event.calculatePoint(stringScrabbleWord);
+      boolean calculatingEvent = true;
+      while(calculatingEvent) {
+          try {
+              BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+              System.out.println("Scrabble word?");
+              String stringScrabbleWord = bufferedReader.readLine();
+              String letterValueResult = Event.calculatePoint(stringScrabbleWord);
 
-            System.out.println(letterValueResult);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+              System.out.println(letterValueResult);
+          } catch (IOException e) {
+              e.printStackTrace();
+          }
+      }
     }
 }
