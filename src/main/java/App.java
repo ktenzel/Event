@@ -10,11 +10,12 @@ public class App {
       while(calculatingEvent) {
           try {
               BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-              System.out.println("Scrabble word?");
-              String stringScrabbleWord = bufferedReader.readLine();
-              String letterValueResult = Event.calculatePoint(stringScrabbleWord);
+              System.out.println("We would like to help you calculate the cost of your party?");
+              System.out.println("How many people will be attending?");
+              String numberOfGuest = bufferedReader.readLine();
+              String partyCost = Event.calculateEvent(numberOfGuest);
 
-              System.out.println(letterValueResult);
+              System.out.println(partyCost);
           } catch (IOException e) {
               e.printStackTrace();
           }

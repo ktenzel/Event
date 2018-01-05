@@ -1,6 +1,31 @@
 package models;
 
 public class Event {
+    public String numberOfGuest;
+
+    public static String calculateEvent(String numberOfGuest){
+        int guest = Integer.parseInt(numberOfGuest);
+        Integer plate = 30;
+        Integer cost = guest * plate;
+        String partyCost = Integer.toString(cost);
+        return partyCost;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public Integer numberGuest;
     public String foodChoice;
     public String drinkChoice;
