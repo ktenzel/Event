@@ -5,9 +5,10 @@ import java.io.InputStreamReader;
 
 public class App {
     public static void main(String[] args) {
-        Event smallParty = new Event(20, 30);
-        Event mediumParty = new Event(50, 25);
-        Event largeParty = new Event(100, 20);
+        Event smallParty = new Event(20, 30, "Chicken", "Vegitarian" );
+        Event mediumParty = new Event(50, 25, "Chicken", "Vegitarian");
+        Event largeParty = new Event(100, 20, "Chicken", "Vegitarian");
+
 
         Event[] partySizes = {smallParty, mediumParty, largeParty};
 
