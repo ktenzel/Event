@@ -18,9 +18,4 @@ public class EventTest {
         Event testEvent = new Event(20);
         assertEquals(600, testEvent.calculateGuestCost("20"));
     }
-    @Test
-    public void calculateEvent_getInitialPlateCost(){
-        Event testEvent = new Event(20, "Vegetarian");
-        assertEquals(600, testEvent.calculateFoodCost("20"));
-    }
 }

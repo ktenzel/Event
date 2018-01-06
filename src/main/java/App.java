@@ -18,7 +18,7 @@ public class App {
               System.out.println("Your current cost is: $" + guestCost);
               System.out.println("Would you like Vegetarian or Chicken served?");
               String foodChoice = bufferedReader.readLine();
-              String partyCost = Event.calculateEvent(numberOfGuest);
+              String partyCost = Event.calculateFood(numberOfGuest);
 
 
           } catch (IOException e) {

@@ -19,12 +19,12 @@
 
 | Behavior        | Input           | Outcome  |
 | ------------- |:-------------:| -----:|
-| Up to 4 players input names, and click _ready!_ button | Player 1: Olivia / Player 2: Matt / Click _Play!_ | Goes to game board |
-| Player 1 clicks _Roll_ button | Click _Roll_ button | Dice rolls and number is generated
-| Player 1 token moves to same space number as dice roll | Roll = 1 | Token to space 1 / New position on space 1 / Player 2 begins |
-| Repeat for Player 2, Player 3, and Player 4 | Roll = 3 | Token to space 3 / New position on space 3 / Next player begins |
-| Designated spaces alter gameplay. If a player lands on a special space, board moves vary | Player 1 lands on "Back to Start" | Player 1 token moved back to start position |
-| Player reaches last space on board| Board position 15| Game ends|
+| program reads value input| 1 | 1 |
+| program uses math to calculate the per input cost | 20 | 600 |
+| program adds value to "plate" if "chicken" option is chosen  | "chicken" | +2 |
+| program adds value to "plate" if "Spirits" option is chosen  | "Spirits" | +5 |
+| program adds value to "plate" if "Live Band" option is chosen | "Live Band" | +300 |
+| program removes value to "total" if "coupon" option is entered | "coupon" | -300 |
 
 
 
