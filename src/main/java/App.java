@@ -13,10 +13,13 @@ public class App {
               System.out.println("We would like to help you calculate the cost of your party?");
               System.out.println("How many people will be attending?");
               String numberOfGuest = bufferedReader.readLine();
+              String guestCost = Event.calculateGuestCost(numberOfGuest);
+
+              System.out.println("Your current cost is: $" + guestCost);
+              System.out.println("Would you like Vegetarian or Chicken served?");
+              String foodChoice = bufferedReader.readLine();
               String partyCost = Event.calculateEvent(numberOfGuest);
 
-              System.out.println("Your current cost is: $" + partyCost);
-              System.out.println("Would you like Vegetarian or Chicken served?");
 
           } catch (IOException e) {
               e.printStackTrace();

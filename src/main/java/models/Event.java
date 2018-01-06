@@ -12,11 +12,11 @@ public class Event {
     }
 
 
-    public static String calculateEvent(String numberOfGuest) {
+    public static String calculateGuestCost(String numberOfGuest) {
         int guest = Integer.parseInt(numberOfGuest);
         Integer plate = 30;
         Integer cost = guest * plate;
-        String partyCost = Integer.toString(cost);
-        return partyCost;
+        String guestCost = Integer.toString(cost);
+        return guestCost;
     }
 }
