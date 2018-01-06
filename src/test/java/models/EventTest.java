@@ -14,8 +14,8 @@ public class EventTest {
         assertEquals(20, testEvent.getGuestCount());
     }
     @Test
-    public void runEvent_getInitialPlateCost(){
+    public void runEvent_getInitialPlateCost() {
         Event testEvent = new Event(20);
-        assertEquals(600, testEvent.calculateEvent());
-
+        assertEquals(600, testEvent.calculateEvent(int numberOfGuest));
+    }
 }
