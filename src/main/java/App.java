@@ -12,15 +12,15 @@ public class App {
               BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
               System.out.println("We would like to help you calculate the cost of your party?");
               System.out.println("How many people will be attending?");
-              String numberOfGuest = bufferedReader.readLine();
-              String guestCost = Event.calculateGuestCost(numberOfGuest);
+              String guestCount = bufferedReader.readLine();
+              String guestCost = Event.calculateGuestCost(guestCount);
 
               System.out.println("Your current cost is: $" + guestCost);
               System.out.println("Would you like Vegetarian or Chicken served?");
               String foodChoice = bufferedReader.readLine();
-              String partyCost = Event.calculateFood(numberOfGuest);
+              String foodCost = Event.calculateFood(foodChoice);
 
-
+              System.out.println("Your current cost is: $" + foodCost);
           } catch (IOException e) {
               e.printStackTrace();
           }

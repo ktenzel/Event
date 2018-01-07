@@ -16,6 +16,6 @@ public class EventTest {
     @Test
     public void calculateEvent_getInitialPlateCost(){
         Event testEvent = new Event(20);
-        assertEquals(600, testEvent.calculateGuestCost("20"));
+        assertEquals("600", testEvent.calculateGuestCost("20"));
     }
 }
