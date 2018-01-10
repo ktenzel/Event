@@ -18,13 +18,35 @@ public class Event {
         this.coupon = coupon;
     }
 
-    public int getGuestCount() {
-
-        return guestCount;
+    public int getGuest() {
+        return guest;
     }
 
+    public String getFood() {
+        return food;
+    }
 
-    public static String calculateGuestCost(String numberOfGuest) {
+    public String getDrink() {
+        return drink;
+    }
+
+    public String getEntertainment() {
+        return entertainment;
+    }
+
+    public String getCoupon() {
+        return coupon;
+    }
+
+    public Integer getBaseCost() {
+        return baseCost;
+    }
+
+    public int getPlate() {
+        return plate;
+    }
+
+    public int calculateGuestCost(String numberOfGuest) {
         int guest = Integer.parseInt(numberOfGuest);
         Integer plate = 30;
         Integer cost = guest * plate;
