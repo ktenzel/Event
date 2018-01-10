@@ -1,15 +1,25 @@
 package models;
 
-import java.net.Inet4Address;
-
 public class Event {
-    private int guestCount;
+    private int guest;
+    private String food;
+    private String drink;
+    private String entertainment;
+    private String coupon;
+    private Integer baseCost;
+    private int plate;
+    Integer cost;
 
-    public Event(int guest) {
-        guestCount = guest;
+    public Event(int guest, String food, String drink, String entertainment, String coupon, ) {
+        this.guest = guest;
+        this.food = food;
+        this.drink = drink;
+        this.entertainment = entertainment;
+        this.coupon = coupon;
     }
 
     public int getGuestCount() {
+
         return guestCount;
     }
 
@@ -20,18 +30,14 @@ public class Event {
         Integer cost = guest * plate;
         String guestCost = Integer.toString(cost);
         return guestCost;
-//    }
-//    public static String calculateFood(String foodChoice) {
-//        if (foodChoice.equals("Chicken")){
-//            Integer plate = 32;
-//            String foodCost = Integer.toString(plate);
-//            return foodCost;
-//        } else if (foodChoice.equals("Vegetarian")){
-//            Integer plate = 30;
-//            String foodCost = Integer.toString(plate);
-//            return foodCost;
-//        } else {
-//            return "Please select Chicken or Vegetarian.";
-//        }
+    }
+    public static String calculateFood(String foodChoice) {
+        if (foodChoice.equals("Chicken")) {
+            return "32";
+        } else if (foodChoice.equals("Chicken")) {
+            return "30";
+        } else {
+            return "Please choose Chicken or Vegetarian.";
+        }
     }
 }
